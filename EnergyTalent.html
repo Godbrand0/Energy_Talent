@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energy Talent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="EnergyTalent.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              goldenrod: "#DAA520", // You can name it anything, like "goldenrod" here
+            },
+            fontFamily: {
+              serif: ["Minion Pro", "serif"],
+              sans: ["Proxima Nova", "sans-serif"],
+            },
+            fontSize: {
+              "main-headline": [
+                "3rem",
+                { lineHeight: "110%", fontWeight: "600" },
+              ], // Example for Main Headline
+              "secondary-headline": [
+                "2rem",
+                { lineHeight: "110%", fontWeight: "550" },
+              ], // Secondary Headline
+              "secondary-subheadline": [
+                "27px",
+                { lineHeight: "110%", fontWeight: "500" },
+              ], // Secondary Subheadline
+              body: ["0.96rem", { lineHeight: "130%", fontWeight: "100" }], // Body Text
+              caption: ["0.8rem", { lineHeight: "130%", fontWeight: "400" }], // Caption
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="bg-goldenrod lg:rounded-xl rounded-b-xl md:mt-6 md:mx-4">
+      <div class="py-6 max-w-[1400px]">
+        <div
+          class="flex z-40 sm:justify-evenly sm:mx-5 justify-evenly sm:gap-48 gap-20 md:justify-between items-center h-12 w-full fixed top-[20px] lg:top-[60px] left-0 lg:px-12"
+        >
+          <img src="assets/Every.svg" alt="" class="lg:w-[100px]" />
+          <button
+            class="md:px-4 md:py-3 px-3 py-2 bg-black text-white font-sans text-caption rounded-[20px] hover:bg-goldenrod hover:text-black duration-500 border-black border-2"
+          >
+            Sign Up for Early Access
+          </button>
+        </div>
+      </div>
+
+        <!-- HERO SECTION -->
+        <div
+          class="lg:h-[650px] 2xl:h-[700px] h-[500px] md:max-w-[full] w-full text-center flex flex-col justify-center items-center"
+        >
+          <div
+            class="max-w-[600px] md:max-w-[800px] lg:mt-[40px] sm:mt-[40px] mt-[60px] w-full mx-auto text-center flex flex-col justify-center items-center"
+          >
+            <h1
+              class="text-3xl lg:mt-[40px] md:text-5xl md:leading-[61.6px] w-[350px] sm:w-[400px] lg:w-[600px] font-serif text-secondary-headline lg:text-main-headline"
+            >
+              Find the Perfect Talent with AI Precision
+            </h1>
+            <h3
+              class="2xl:text-2xl md:text-xl text-[#292929] my-6 md:font-medium font-sans text-subheadline tracking-wide w-[400px] md:w-[600px]"
+            >
+              Streamline your hiring with a tailored talent-matching platform
+              that connects you with certified renewable energy, construction,
+              Healthcare, Finance and Accounting experts
+            </h3>
+            <button
+              class="px-4 py-3 bg-black text-white font-sans text-caption rounded-3xl hover:bg-goldenrod hover:text-black duration-500 border-black border-2"
+            >
+              Sign Up for Early Access
+            </button>
+          </div>
+
+          <div class="overflow-hidden max-w-[1800px] mt-10 lg:mx-8 mx-3 z-0">
+            <div class="overflow-hidden w-full h-300 flex items-center">
+              <div id="slider" class="flex space-x-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- GET STARTED SECTION -->
+    </div>
+    <div class="md:mt-[150px] my-[100px] max-w-full lg:mx-20 mx-6">
+      <h2
+        class="lg:text-[76px] sm:text-5xl text-center my-11 font-serif text-secondary-headline lg:text-main-headline"
+      >
+        Get Matched in 3 steps
+      </h2>
+      <div
+        class="md:flex justify-center items-center gap-8 bg-slate-100 md:p-10 p-4 rounded-xl my-5"
+      >
+        <img
+          src="assets/describe.gif"
+          alt="describe gif"
+          class="md:h-[500px] h-[400px] 2xl:w-[800px]"
+        />
+        <div>
+          <h3 class="md:text-3xl my-6 font-sans text-secondary-subheadline">
+            Describe your role
+          </h3>
+          <p class="font-sans 2xl:text-2xl text-body">
+            Tell us about the ideal candidate you’re looking for. Whether it’s
+            specific certifications or specialized experience, our AI captures
+            it all.
+          </p>
+        </div>
+      </div>
+      <div class="block md:flex max-w-[1700] my-5 gap-9">
+        <div
+          class="bg-slate-100 md:p-10 p-4 rounded-2xl lg:w-[650px] 2xl:w-[50%] lg:h-[700px] h-[590px] my-5"
+        >
+          <img
+            src="assets/Screen.gif"
+            alt=" dcreen gif"
+            class="md:h-[500px] h-[400px]"
+          />
+
+          <h2 class="md:text-3xl my-6 text-secondary-subheadline font-sans">
+            AI-Powered Talent Matching
+          </h2>
+          <p class="font-sans 2xl:text-2xl text-body">
+            Our AI analyzes and refines your job description, delivering a
+            curated list of the best talent for the role.
+          </p>
+        </div>
+        <div
+          class="bg-slate-100 md:p-10 p-4 rounded-2xl 2xl:w-[60%] md:h-[700px] h-[550px] my-5 font-sans text-subheadline"
+        >
+          <img
+            src="assets/Tensor.gif"
+            alt="Tensorpix gif"
+            class="md:h-[500px] h-[370px]"
+          />
+          <h2 class="md:text-4xl my-6 text-secondary-subheadline font-sans">
+            Interview & Hire
+          </h2>
+          <p class="font-sans 2xl:text-2xl text-body">
+            Select from the matched talents, schedule interviews with just a
+            click, and hire with confidence.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER SECTION -->
+    <div
+      class="bg-black md:h-[650px] h-[1080px] w-full lg:rounded-xl rounded-t-2xl lg:mb-5 text-white md:p-16 md:mt-9 pt-14 px-4"
+    >
+      <div
+        class="block md:flex justify-evenly items-baseline py-8 lg:gap-7 gap-14"
+      >
+        <div class="flex lg:block gap-4">
+          <img
+            src="assets/wand.svg"
+            alt="icon"
+            className="lg:w-[50px] lg:h-[50px] mr-4"
+          />
+          <div>
+            <h2 class="font-sans text-secondary-subheadline md:my-4 my-4">
+              Precise Matching, Every Time
+            </h2>
+
+            <p class="tracking-wider font-sans text-body">
+              Stop Wasting Time on Endless Screening. Our AI-powered platform
+              analyzes thousands of profiles to deliver the top candidates that
+              perfectly match your specific requirements, saving you countless
+              hours of manual searching.
+            </p>
+          </div>
+        </div>
+        <div class="flex md:block gap-4 items-center m-3 my-8">
+          <img
+            src="assets/transformer.svg"
+            alt="icon"
+            className=" lg:w-[50px] lg:h-[50px] mr-4"
+          />
+          <div>
+            <h2 class="font-sans text-secondary-subheadline md:my-4 my-4">
+              Built for your Industry
+            </h2>
+
+            <p class="tracking-wider font-sans text-body">
+              Specialized Talent Pools. Whether you need skilled professionals
+              in renewable energy, construction, healthcare, or finance and
+              accounting, we've got you covered. Our platform provides access to
+              a diverse network of certified experts with the exact skills and
+              experience you're looking for.
+            </p>
+          </div>
+        </div>
+        <div class="flex md:block gap- items-center m-2">
+          <img
+            src="assets/ranking.svg"
+            alt="icon"
+            class="lg:w-[50px] lg:h-[50px] mr-4"
+          />
+          <div>
+            <h2 class="md: my-4 md:my-4 font-sans text-secondary-subheadline">
+              On-Demand Options
+            </h2>
+
+            <p class="tracking-wider font-sans text-body">
+              Find the Perfect Fit. Not seeing exactly what you need in the
+              initial matches? No problem! Request additional profiles, and our
+              AI will generate a fresh lineup of qualified candidates within
+              days.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="flex text-center flex-col items-center justify-center">
+        <p
+          class="my-8 leading-snug font-sans text-secondary-subheadline lg:w-[400px]"
+        >
+          Ready to hire top talents effortlessly?
+        </p>
+        <button
+          class="p-3 cursor-pointer border-2 bg-goldenrod text-sm font-sans text-subheadline border-black text-black font-medium rounded-[40px] hover:bg-black hover:text-white duration-500"
+        >
+          Get Started Now
+        </button>
+      </div>
+    </div>
+    <script src="EnergyTalent.js"></script>
+  </body>
+</html>
