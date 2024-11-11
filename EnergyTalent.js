@@ -37,7 +37,7 @@ allImages.forEach((image, index) => {
 let scrollAmount = 0;
 
 function scrollSlider() {
-  scrollAmount += 3; // Adjust to control speed
+  scrollAmount += 2; // Adjust to control speed
   slider.style.transform = `translateX(${-scrollAmount}px)`;
 
   // Reset scroll position for seamless scroll
