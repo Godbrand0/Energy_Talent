@@ -23,8 +23,8 @@ allImages.forEach((image, index) => {
   imgElement.alt = image.alt;
   imgElement.classList.add(
     "lg:w-56",
-    "w-32",
-    "h-24",
+    "w-[350px]",
+    "h-[250px]",
     "object-cover",
     "rounded-xl",
     "lg:h-44",
@@ -37,7 +37,7 @@ allImages.forEach((image, index) => {
 let scrollAmount = 0;
 
 function scrollSlider() {
-  scrollAmount += 2; // Adjust to control speed
+  scrollAmount += 1; // Adjust to control speed
   slider.style.transform = `translateX(${-scrollAmount}px)`;
 
   // Reset scroll position for seamless scroll
